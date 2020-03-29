@@ -26,9 +26,11 @@ render(){
       }
 
       if(!this.state.lat && this.state.errorMessage){
-        return <h2>Error: {this.state.errorMessage}</h2>
+        return (<div className="ui  border red">
+        <h2>Error: {this.state.errorMessage}</h2>
+        </div>)
       }
-        return <Loader/>
+        return <Loader />
   
 
 
