@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import Loader from './Loader';
 
 class App extends Component {
 
@@ -27,7 +28,7 @@ render(){
       if(!this.state.lat && this.state.errorMessage){
         return <h2>Error: {this.state.errorMessage}</h2>
       }
-        return <h2>Loading</h2>
+        return <Loader/>
   
 
 

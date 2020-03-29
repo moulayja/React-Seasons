@@ -1,0 +1,32 @@
+.winter {
+    background-color: rgb(78, 214, 214);
+    color: whitesmoke;
+
+}
+
+.summer {
+    background-color: rgb(214, 194, 78);
+    color: whitesmoke;
+}
+
+.icon-left {
+    color: rgb(220, 235, 221);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon-right {
+    color: rgb(220, 235, 221);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text {
+    font-size: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
