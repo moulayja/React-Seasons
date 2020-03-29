@@ -1,14 +1,21 @@
 import React from 'react'
 
 
-// To be determined
+ const SeasonDisplay= props => {
 
- const SeasonDisplay=()=> {
+     const getSeason =(lat, month)=>{
+         if( month > 2 && month < 9 ){
+             return lat > 0 ? 'Summer' : 'Winter'
+         }else{
+            return lat > 0 ?  'Winter' :  'Summer'
+         }
+     }
 
- 
+     const season = getSeason(props.lat, new Date().getMonth())
+     const seasonPref = season === 'Winter' ? `Burr it's Chilly` : `Let's hit the Beach`
     return (
         <div>
-            Geolocation
+            <h1>{seasonPref}</h1>
         </div>
     )
 }
